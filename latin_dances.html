@@ -109,7 +109,7 @@
     </style>
   </head>
   <body>
-    <button id="theme-button">Change theme</button>
+    <button class="theme-button">Change theme</button>
     <div class="container">
       <h1>💃Salsa</h1>
       <h2>My favorite hobby</h2>
@@ -148,7 +148,7 @@
         >Read on Wikipedia</a
       >
       <br />
-      <button id="learn-salsa">Learn Salsa</button>
+      <button class="learn-salsa">Learn Salsa</button>
     </div>
     <footer>
       Coded with 💙 by
@@ -165,15 +165,6 @@
 
       let themeButton = document.querySelector(".theme-button");
       themeButton.addEventListener("click", changeTheme);
-
-      function learnSalsa() {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email address?");
-
-        alert("Thank you, " + name + "! We'll be in touch by email. ");
-      }
-      let learnSalsaButton = document.querySelector(".learn-salsa");
-      learnSalsaButton.addEventListener("click", learnSalsaButton);
     </script>
   </body>
 </html>
