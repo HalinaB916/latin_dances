@@ -1,33 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Dances 💃🏻</title>
-      <style>
-            body {
-              background: linear-gradient(117.8deg, rgb(240, 19, 77) 22.2%, rgb(228, 0, 124) 88.7%);
-            }
-      </style>
-      
-</head>
-<body>
-      <button>Dark theme</button>
-    <h1>Salsa</h1>  
-    <h2>My favorite hobby</h2>
-    <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/091/original/Latin-dancers_%281%29.jpg?1711025301" alt="">
-</a>
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/093/original/salsa-dance.jpeg?1711025494" alt="">
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/170/original/salsa.jpg?1711049665" alt="">
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/351/original/shutterstock_1176472411-scaled.jpg?1711188346" alt="">
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/000/original/salsa-dancers-AdobeStock_227971393-scaled.jpeg?1710959320" alt="">
-   <p>
-      Salsa is a Latin dance, associated with salsa music, which was first popularized in the United States in the 1960s in
-      New York City. Salsa is a mixture of Cuban dances, such as mambo, pachanga, and rumba, as well as American dances
-      such as swing and tap.
-    </p>
-    <button>Learn Salsa</button>
-    <footer>Coded with 💙 by <a href="https://www.facebook.com/galina.borsak" target="_blank">Galina Borsak</a></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dances 💃🏻</title>
+    <style>
+      body {
+        background: linear-gradient(
+          117.8deg,
+          rgb(240, 19, 77) 22.2%,
+          rgb(228, 0, 124) 88.7%
+        );
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgb(228, 0, 124);
+        background: white;
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: #e90869;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .theme-button {
+        font-size: 12px;
+        background: black;
+        color: white;
+        padding: 8px 8px;
+      }
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .salsa-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .salsa-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark theme</button>
+    <div class="container">
+      <h1>💃Salsa</h1>
+      <h2>My favorite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/091/original/Latin-dancers_%281%29.jpg?1711025301"
+          alt=""
+          class="salsa-intro-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/093/original/salsa-dance.jpeg?1711025494"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/170/original/salsa.jpg?1711049665"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/351/original/shutterstock_1176472411-scaled.jpg?1711188346"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/000/original/salsa-dancers-AdobeStock_227971393-scaled.jpeg?1710959320"
+          alt=""
+        />
+      </div>
+      <p>
+        Salsa is a Latin dance, associated with salsa music, which was first
+        popularized in the United States in the 1960s in New York City. Salsa is
+        a mixture of Cuban dances, such as mambo, pachanga, and rumba, as well
+        as American dances such as swing and tap.
+      </p>
+      📖<a href="https://en.wikipedia.org/wiki/Salsa_(dance)"
+        >Read on Wikipedia</a
+      >
+      <br />
+      <button>Learn Salsa</button>
+    </div>
+    <footer>
+      Coded with 💙 by
+      <a href="https://www.facebook.com/galina.borsak" target="_blank"
+        >Galina Borsak</a
+      >
+    </footer>
+  </body>
 </html>
