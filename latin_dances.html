@@ -87,12 +87,29 @@
       }
 
       .grid img:hover {
-        transform: scale(2);
+        transform: scale(1.5);
+      }
+
+      .dark {
+        background: linear-gradient(
+          178.1deg,
+          rgb(60, 55, 106) 8.5%,
+          rgb(23, 20, 69) 82.4%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark a {
+        color: #e90869;
       }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark theme</button>
+    <button id="theme-button">Change theme</button>
     <div class="container">
       <h1>💃Salsa</h1>
       <h2>My favorite hobby</h2>
@@ -127,11 +144,11 @@
         a mixture of Cuban dances, such as mambo, pachanga, and rumba, as well
         as American dances such as swing and tap.
       </p>
-      📖<a href="https://en.wikipedia.org/wiki/Salsa_(dance)"
+      📖<a href="https://en.wikipedia.org/wiki/Salsa_(dance)" target="_blank"
         >Read on Wikipedia</a
       >
       <br />
-      <button>Learn Salsa</button>
+      <button id="learn-salsa">Learn Salsa</button>
     </div>
     <footer>
       Coded with 💙 by
@@ -139,5 +156,24 @@
         >Galina Borsak</a
       >
     </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      function learnSalsa() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert("Thank you, " + name + "! We'll be in touch by email. ");
+      }
+      let learnSalsaButton = document.querySelector(".learn-salsa");
+      learnSalsaButton.addEventListener("click", learnSalsaButton);
+    </script>
   </body>
 </html>
